@@ -1,0 +1,258 @@
+/* header menu */
+
+.header {
+    margin-top: 40px;
+}
+
+.header .header-menu .menu {
+    list-style-type: none;
+    gap: 20px 60px;
+    margin-bottom: 0;
+}
+
+.header .header-menu .menu .menu-item .menu-link {
+    color: var(--text-color);
+}
+
+.btn-sign-in {
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+
+/* banner */
+
+#banner {
+    margin: 100px 0 130px 0;
+}
+
+.banner {
+    margin-bottom: 70px;
+}
+
+.banner .banner-content {
+    width: 443px;
+    max-width: 100%;
+}
+
+.banner .banner-content .banner-heading {
+    font-weight: bold;
+    font-size: 5.5rem;
+    line-height: 82px;
+    margin-bottom: 20px;
+}
+
+.banner .banner-content .banner-text {
+    margin-bottom: 30px;
+    line-height: 32px;
+    color: var(--text);
+    width: 423px;
+}
+
+.banner .banner-content .btn-banner {
+    background-color: var(--btn);
+    color: var(--white);
+}
+
+.banner .banner-img .main-banner-img {
+    position: relative;
+    margin-right: 60px;
+}
+
+.banner .banner-img .banner-img-ab {
+    position: absolute;
+}
+
+.ab-1 {
+    top: 50%;
+    left: -25%;
+    transform: translateY(-50%)
+}
+
+.ab-2 {
+    top: 53px;
+    right: -60px;
+}
+
+#banner .trust .trust-text {
+    width: 151px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 24px;
+}
+
+
+/* work */
+
+#work {
+    margin-bottom: 130px;
+}
+
+#work .work-content {
+    margin-bottom: 70px;
+}
+
+#work .work-heading,
+#form .form-heading {
+    margin: 20px 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: 54px;
+}
+
+#work .work-title,
+#form .form-title {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    color: var(--orange);
+}
+
+#work .work-text,
+#form .form-text {
+    width: 385px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 32px;
+    color: var(--text);
+    margin: auto;
+}
+
+#work .work-list {
+    gap: 60px 0;
+}
+
+#work .work-list .work-details {
+    flex: 1;
+}
+
+#work .work-list .work-details .list-heading {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 30px;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
+#work .work-list .work-item {
+    gap: 10px 42px;
+}
+
+#work .work-list .work-details .list-text {
+    width: 216px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 32px;
+    color: var(--text);
+}
+
+
+/* form */
+
+.form {
+    gap: 0 71px;
+}
+
+.form .form-content .get-started {
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--background)
+}
+
+.form .form-content .get-started .email {
+    width: 100%;
+    height: 100%;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.form .form-content .get-started .submit {
+    position: absolute;
+    color: var(--white);
+    background-color: var(--btn);
+    outline: none;
+    border: none;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+@media (max-width: 1200px) {
+    .header-menu,
+    .banner-img {
+        display: none;
+    }
+    .banner {
+        justify-content: center!important;
+        text-align: center;
+    }
+    .trust {
+        text-align: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    #banner .trust .trust-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .form {
+        text-align: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+    #work .work-list {
+        padding: 0 65px;
+    }
+}
+
+@media (max-width:576px) {
+    .banner,
+    .trust {
+        justify-content: center!important;
+        text-align: unset;
+    }
+    .banner .banner-content .banner-heading {
+        font-size: 3.8rem;
+        line-height: 57px;
+    }
+    .banner .banner-content .banner-text,
+    #work .work-text,
+    #form .form-text {
+        width: 100%;
+    }
+    #work .work-list {
+        padding: 0 15px;
+    }
+    .form-content {
+        text-align: center;
+    }
+    #form .form-heading {
+        font-size: 2.8rem;
+        line-height: 4.2rem;
+    }
+    #work .work-list .work-item {
+        gap: 10px 24px;
+    }
+    .form .form-content .get-started {
+        border-radius: unset;
+        overflow: unset!important;
+        background-color: unset
+    }
+    .form .form-content .get-started .email {
+        border-radius: 50px;
+        background-color: var(--background);
+        margin-bottom: 12px;
+    }
+    .form .form-content .get-started .submit {
+        position: unset;
+        width: 100%;
+    }
+}

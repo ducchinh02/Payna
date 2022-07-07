@@ -1,0 +1,45 @@
+:root {
+    --text-color: #070F18;
+    --background: #F5F6FB;
+    --btn: #1F7CFF;
+    --white: #ffffff;
+    --text: #575455;
+    --orange: #F75C4E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 1272px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+a,
+a:hover {
+    text-decoration: none
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.btn-main {
+    padding: 12px 40px;
+    border-radius: 50px;
+}
